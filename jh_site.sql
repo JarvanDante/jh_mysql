@@ -566,7 +566,7 @@ CREATE TABLE `user_grade` (
   `rebate_percent_lottery` decimal(5,4) NOT NULL DEFAULT '0.0000' COMMENT '额外返水比例: 彩票',
   `rebate_percent_live` decimal(5,4) NOT NULL DEFAULT '0.0000' COMMENT '额外返水比例: 真人视讯',
   `rebate_percent_egame` decimal(5,4) NOT NULL DEFAULT '0.0000' COMMENT '额外返水比例: 电子游戏',
-  `rebate_percent_poker` decimal(5,4) NOT NULL COMMENT '额外返水比例：棋牌',
+  `rebate_percent_poker` decimal(5,4) NOT NULL DEFAULT '0.0000' COMMENT '额外返水比例：棋牌',
   `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态.1=可用；0=禁用',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
